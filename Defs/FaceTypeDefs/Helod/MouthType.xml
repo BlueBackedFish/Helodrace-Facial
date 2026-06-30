@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <FacialAnimation.MouthTypeDef>
+    <defName>HD_FA_MouthNormal</defName>
+    <texPath>Things/Pawn/Helod/Mouth/Normal1</texPath>
+    <raceName>Helod</raceName>
+    <shader>Map/Transparent</shader>
+    <enableUnisexTexPath>True</enableUnisexTexPath>
+  </FacialAnimation.MouthTypeDef>
+</Defs>

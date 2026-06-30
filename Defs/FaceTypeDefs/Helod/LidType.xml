@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <FacialAnimation.LidTypeDef>
+    <defName>HD_FA_LidNormal</defName>
+    <texPath>Things/Pawn/Helod/Lids/Normal1</texPath>
+    <raceName>Helod</raceName>
+    <shader>Map/Transparent</shader>
+    <enableUnisexTexPath>True</enableUnisexTexPath>
+  </FacialAnimation.LidTypeDef>
+</Defs>
