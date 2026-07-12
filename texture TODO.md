@@ -1,24 +1,24 @@
-# Helod Facial 1 Set Missing Texture Checklist
+# Helod Facial 1 세트 누락 텍스처 체크리스트
 
-Reference source: `TexturePathReferences/Textures/Things/Pawn/Miho`
+참조 원본: `TexturePathReferences/Textures/Things/Pawn/Miho`
 
-Current target: `Textures/Things/Pawn/Helod`
+현재 대상: `Textures/Things/Pawn/Helod`
 
-Comparison basis:
+비교 기준:
 
-- PNG files only. `.dds.zstd` files are ignored for this checklist.
-- Current active Helod defs use:
+- PNG 파일만 대상으로 합니다. 이 체크리스트에서는 `.dds.zstd` 파일을 제외합니다.
+- 현재 활성화된 Helod 정의에서는 다음 경로를 사용합니다:
   - `Brows/Normal`
   - `Eyes/Normal1`
   - `Heads_Blank/Helod`
   - `Lids/Normal1`
   - `Mouth/Normal1`
-- Reference paths were mapped from `Miho` to `Helod`.
-- `Heads_Blank/Miho` was mapped to `Heads_Blank/Helod`.
+- 참조 경로의 `Miho`를 `Helod`로 대응시켰습니다.
+- `Heads_Blank/Miho`는 `Heads_Blank/Helod`에 대응시켰습니다.
 
-## Existing Files
+## 기존 파일
 
-These files already exist in the Helod texture folder:
+다음 파일은 Helod 텍스처 폴더에 이미 존재합니다:
 
 ```text
 Textures/Things/Pawn/Helod/Brows/Normal/Unisex/normal_south.png
@@ -32,13 +32,13 @@ Textures/Things/Pawn/Helod/Mouth/Normal1/Unisex/normal_south.png
 Textures/Things/Pawn/Helod/Mouth/Normal1/Unisex/sad_south.png
 ```
 
-## Missing For Current Defs
+## 현재 정의에서 누락된 파일
 
-These are referenced by the current style set and should be made to match the reference coverage.
+다음 파일은 현재 스타일 세트에서 참조되며, 참조 원본과 동일한 범위를 지원하도록 제작해야 합니다.
 
-### Head
+### 머리
 
-Target folder: `Textures/Things/Pawn/Helod/Heads_Blank/Helod/Unisex`
+대상 폴더: `Textures/Things/Pawn/Helod/Heads_Blank/Helod/Unisex`
 
 ```text
 blush_cover_east.png
@@ -59,9 +59,9 @@ normal_east.png
 normal_north.png
 ```
 
-### Brow
+### 눈썹
 
-Target folder: `Textures/Things/Pawn/Helod/Brows/Normal/Unisex`
+대상 폴더: `Textures/Things/Pawn/Helod/Brows/Normal/Unisex`
 
 ```text
 angled_east.png
@@ -73,9 +73,9 @@ s-shaped_east.png
 s-shaped_south.png
 ```
 
-### Eye
+### 눈
 
-Target folder: `Textures/Things/Pawn/Helod/Eyes/Normal1/Unisex`
+대상 폴더: `Textures/Things/Pawn/Helod/Eyes/Normal1/Unisex`
 
 ```text
 heart_highlight_east.png
@@ -84,9 +84,9 @@ normal_east.png
 normal_highlight_east.png
 ```
 
-### Lid
+### 눈꺼풀
 
-Target folder: `Textures/Things/Pawn/Helod/Lids/Normal1/Unisex`
+대상 폴더: `Textures/Things/Pawn/Helod/Lids/Normal1/Unisex`
 
 ```text
 close_bottom_east.png
@@ -101,9 +101,9 @@ normal_bottom_east.png
 normal_cover_east.png
 ```
 
-### Mouth
+### 입
 
-Target folder: `Textures/Things/Pawn/Helod/Mouth/Normal1/Unisex`
+대상 폴더: `Textures/Things/Pawn/Helod/Mouth/Normal1/Unisex`
 
 ```text
 down_east.png
@@ -118,15 +118,15 @@ smile_east.png
 smile_south.png
 ```
 
-## Missing Optional/Controller Sets
+## 누락된 선택 사항/컨트롤러 세트
 
-The Helod patch currently adds `EmotionControllerComp`, `SkinControllerComp`, and `LidOptionControllerComp`, but there are no Helod defs/textures for these sets yet. If we want full parity with the reference, these should be added too.
+현재 Helod 패치에는 `EmotionControllerComp`, `SkinControllerComp`, `LidOptionControllerComp`가 추가되어 있지만, 아직 이 세트에 해당하는 Helod 정의와 텍스처가 없습니다. 참조 원본과 완전히 동일하게 지원하려면 이 항목들도 추가해야 합니다.
 
-### Emotion
+### 감정
 
-Required def file to add: `Defs/FaceTypeDefs/Helod/EmotionType.xml`
+추가해야 할 필수 정의 파일: `Defs/FaceTypeDefs/Helod/EmotionType.xml`
 
-Target folder: `Textures/Things/Pawn/Helod/Emotions/Normal/Unisex`
+대상 폴더: `Textures/Things/Pawn/Helod/Emotions/Normal/Unisex`
 
 ```text
 cheerful_east.png
@@ -137,40 +137,31 @@ gloomy_north.png
 gloomy_south.png
 ```
 
-### Lid Option
+### 눈꺼풀 옵션
 
-Required def file to add: `Defs/FaceTypeDefs/Helod/LidOptionType.xml`
+추가해야 할 필수 정의 파일: `Defs/FaceTypeDefs/Helod/LidOptionType.xml`
 
-Reference uses gender folders instead of `Unisex`.
+참조 원본에서는 `Unisex` 대신 성별 폴더를 사용합니다.
 
-Target folders:
+대상 폴더:
 
 ```text
 Textures/Things/Pawn/Helod/LidOptions/Normal/Female
 Textures/Things/Pawn/Helod/LidOptions/Normal/Male
 ```
 
-Files needed in each folder:
+각 폴더에 필요한 파일:
 
 ```text
 tear_east.png
 tear_south.png
 ```
 
-### Skin Overlays
+### 피부 오버레이
 
-Required def file to add: `Defs/FaceTypeDefs/Helod/SkinType.xml`
+추가해야 할 필수 정의 파일: `Defs/FaceTypeDefs/Helod/SkinType.xml`
 
-Target folder: `Textures/Things/Pawn/Helod/Skins/LeftChin/Unisex`
-
-```text
-normal_east.png
-normal_north.png
-normal_south.png
-normal_west.png
-```
-
-Target folder: `Textures/Things/Pawn/Helod/Skins/RightEye/Unisex`
+대상 폴더: `Textures/Things/Pawn/Helod/Skins/LeftChin/Unisex`
 
 ```text
 normal_east.png
@@ -179,23 +170,31 @@ normal_south.png
 normal_west.png
 ```
 
-## Summary
-
-Current active def texture gaps:
+대상 폴더: `Textures/Things/Pawn/Helod/Skins/RightEye/Unisex`
 
 ```text
-Head: 16 missing
-Brow: 7 missing
-Eye: 4 missing
-Lid: 10 missing
-Mouth: 10 missing
+normal_east.png
+normal_north.png
+normal_south.png
+normal_west.png
 ```
 
-Optional/controller texture gaps:
+## 요약
+
+현재 활성 정의에서 누락된 텍스처:
 
 ```text
-Emotion: 6 missing, plus EmotionType.xml
-LidOption: 4 missing, plus LidOptionType.xml
-Skin overlays: 8 missing, plus SkinType.xml
+머리: 16개 누락
+눈썹: 7개 누락
+눈: 4개 누락
+눈꺼풀: 10개 누락
+입: 10개 누락
 ```
 
+선택 사항/컨트롤러 텍스처 누락:
+
+```text
+감정: 6개 누락, EmotionType.xml도 필요
+눈꺼풀 옵션: 4개 누락, LidOptionType.xml도 필요
+피부 오버레이: 8개 누락, SkinType.xml도 필요
+```
