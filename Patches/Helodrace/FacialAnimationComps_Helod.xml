@@ -15,9 +15,14 @@
               <li><compClass>FacialAnimation.LidControllerComp</compClass></li>
               <li><compClass>FacialAnimation.BrowControllerComp</compClass></li>
               <li><compClass>FacialAnimation.MouthControllerComp</compClass></li>
+              <!-- TODO: Re-enable these optional controllers after adding the matching
+                   Helod SkinTypeDef, LidOptionTypeDef, EmotionTypeDef, and textures.
+                   Enabling them without applicable defs can pass a null FaceTypeDef
+                   to GraphicHelper.GetTexPathPrefix during render-tree setup.
               <li><compClass>FacialAnimation.SkinControllerComp</compClass></li>
               <li><compClass>FacialAnimation.LidOptionControllerComp</compClass></li>
               <li><compClass>FacialAnimation.EmotionControllerComp</compClass></li>
+              -->
               <li><compClass>FacialAnimation.FacialAnimationControllerComp</compClass></li>
             </comps>
           </value>
@@ -31,9 +36,14 @@
             <li><compClass>FacialAnimation.LidControllerComp</compClass></li>
             <li><compClass>FacialAnimation.BrowControllerComp</compClass></li>
             <li><compClass>FacialAnimation.MouthControllerComp</compClass></li>
+            <!-- TODO: Re-enable these optional controllers after adding the matching
+                 Helod SkinTypeDef, LidOptionTypeDef, EmotionTypeDef, and textures.
+                 Enabling them without applicable defs can pass a null FaceTypeDef
+                 to GraphicHelper.GetTexPathPrefix during render-tree setup.
             <li><compClass>FacialAnimation.SkinControllerComp</compClass></li>
             <li><compClass>FacialAnimation.LidOptionControllerComp</compClass></li>
             <li><compClass>FacialAnimation.EmotionControllerComp</compClass></li>
+            -->
             <li><compClass>FacialAnimation.FacialAnimationControllerComp</compClass></li>
           </value>
         </match>
