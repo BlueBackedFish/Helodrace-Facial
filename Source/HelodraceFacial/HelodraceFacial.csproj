@@ -20,6 +20,9 @@
   <PropertyGroup Condition="'$(FacialAnimationDir)' == ''">
     <FacialAnimationDir>C:\Program Files (x86)\Steam\steamapps\workshop\content\294100\1635901197\1.6\Assemblies</FacialAnimationDir>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(HarmonyDir)' == ''">
+    <HarmonyDir>C:\Program Files (x86)\Steam\steamapps\workshop\content\294100\2009463077\Current\Assemblies</HarmonyDir>
+  </PropertyGroup>
 
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
@@ -28,6 +31,10 @@
     </Reference>
     <Reference Include="FacialAnimation">
       <HintPath>$(FacialAnimationDir)\FacialAnimation.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(HarmonyDir)\0Harmony.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">

@@ -154,7 +154,7 @@
       <li>
         <duration>1</duration>
         <browShapeDef>down</browShapeDef>
-        <lidShapeDef>dead</lidShapeDef>
+        <lidShapeDef>cry</lidShapeDef>
         <lidOptionShapeDef>tear</lidOptionShapeDef>
         <mouthShapeDef>down</mouthShapeDef>
       </li>
