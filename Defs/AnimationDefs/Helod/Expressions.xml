@@ -139,7 +139,7 @@
         <browShapeDef>down</browShapeDef>
         <lidShapeDef>cry</lidShapeDef>
         <lidOptionShapeDef>tear</lidOptionShapeDef>
-        <mouthShapeDef>tight</mouthShapeDef>
+        <mouthShapeDef>down</mouthShapeDef>
       </li>
     </animationFrames>
     <priority>100000</priority>

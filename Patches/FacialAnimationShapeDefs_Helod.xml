@@ -83,7 +83,17 @@
             <FacialAnimation.LidShapeDef>
               <defName>cry</defName>
               <altShapeDef>normal</altShapeDef>
+              <disableEyeball>true</disableEyeball>
             </FacialAnimation.LidShapeDef>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/FacialAnimation.LidShapeDef[defName="cry"]/disableEyeball</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/FacialAnimation.LidShapeDef[defName="cry"]</xpath>
+          <value>
+            <disableEyeball>true</disableEyeball>
           </value>
         </nomatch>
       </li>
@@ -97,6 +107,15 @@
               <altShapeDef>close</altShapeDef>
               <disableEyeball>true</disableEyeball>
             </FacialAnimation.LidShapeDef>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/FacialAnimation.LidShapeDef[defName="dead"]/disableEyeball</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/FacialAnimation.LidShapeDef[defName="dead"]</xpath>
+          <value>
+            <disableEyeball>true</disableEyeball>
           </value>
         </nomatch>
       </li>
