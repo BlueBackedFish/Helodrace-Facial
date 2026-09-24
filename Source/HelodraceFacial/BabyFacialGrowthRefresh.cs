@@ -23,16 +23,16 @@ namespace HelodraceFacial
                 return;
             }
 
-            Reload(___pawn.GetComp<HeadControllerComp>());
-            Reload(___pawn.GetComp<EyeballControllerComp>());
-            Reload(___pawn.GetComp<LidControllerComp>());
-            Reload(___pawn.GetComp<MouthControllerComp>());
-            Reload(___pawn.GetComp<LidOptionControllerComp>());
+            MarkDirty(___pawn.GetComp<HeadControllerComp>());
+            MarkDirty(___pawn.GetComp<EyeballControllerComp>());
+            MarkDirty(___pawn.GetComp<LidControllerComp>());
+            MarkDirty(___pawn.GetComp<MouthControllerComp>());
+            MarkDirty(___pawn.GetComp<LidOptionControllerComp>());
 
             ___pawn.Drawer?.renderer?.SetAllGraphicsDirty();
         }
 
-        private static void Reload(IFacialAnimationController controller)
+        private static void MarkDirty(IFacialAnimationController controller)
         {
             if (controller == null)
             {
@@ -40,7 +40,6 @@ namespace HelodraceFacial
             }
 
             controller.SetDirty();
-            controller.ReloadIfNeed();
         }
     }
 }
