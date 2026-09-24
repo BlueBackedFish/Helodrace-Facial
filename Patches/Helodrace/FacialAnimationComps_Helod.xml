@@ -79,14 +79,23 @@
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/ThingDef[defName="Helod"]/comps/li[compClass="FacialAnimation.LidOptionControllerComp"]</xpath>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="Helod"]/comps</xpath>
+        <xpath>/Defs/ThingDef[defName="Helod"]/comps/li[compClass="FacialAnimation.LidOptionControllerComp"]/compClass</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="Helod"]/comps/li[compClass="FacialAnimation.LidOptionControllerComp"]/compClass</xpath>
           <value>
-            <li>
-              <compClass>FacialAnimation.LidOptionControllerComp</compClass>
-            </li>
+            <compClass>HelodraceFacial.HelodBabyLidOptionControllerComp</compClass>
           </value>
+        </match>
+        <nomatch Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Helod"]/comps/li[compClass="HelodraceFacial.HelodBabyLidOptionControllerComp"]</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Helod"]/comps</xpath>
+            <value>
+              <li>
+                <compClass>HelodraceFacial.HelodBabyLidOptionControllerComp</compClass>
+              </li>
+            </value>
+          </nomatch>
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
