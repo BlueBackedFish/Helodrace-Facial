@@ -1,2 +1,9 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Keep development files in Git without shipping them in source archives.
+/.gitattributes export-ignore
+/.gitignore export-ignore
+/Source/ export-ignore
+*.psd export-ignore
+*.kra export-ignore

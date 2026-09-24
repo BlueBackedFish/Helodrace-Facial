@@ -11,4 +11,5 @@ Compatibility patch mod for using Helodrace with Facial Animation.
 - `Source/HelodraceFacial/`: C# component that keeps the rare Normal0 lid and mouth textures paired.
 - `Assemblies/`: compiled runtime assembly.
 - `Textures/Things/Pawn/Helod/`: face-part textures for Helod pawns.
-- `TexturePathReferences/`: reference folder for texture path examples.
+
+The GitHub ZIP includes the files needed to install the mod. C# source and editable art files remain in the repository for development.
